@@ -14,7 +14,7 @@ body{
 	background: #444;
 	margin: 50px 50px;
 	padding: 20px;
-	outline: 4px solid rgb(94, 102, 246);
+	outline: 4px solid rgb(0, 0, 0);
 }
 
 .form {
@@ -88,4 +88,5 @@ body{
 }
 
 .form input[type="submit"]:active{
-	background: linear-gradient(to bottom,#094,rgb(109, 209, 193));}
+	background: linear-gradient(to bottom,#094,rgb(109, 209, 193));
+}
