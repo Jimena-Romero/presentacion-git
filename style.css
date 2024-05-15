@@ -88,4 +88,5 @@ body{
 }
 
 .form input[type="submit"]:active{
-	background: linear-gradient(to bottom,#094,rgb(109, 209, 193));}
+	background: linear-gradient(to bottom,#094,rgb(109, 209, 193));
+}
