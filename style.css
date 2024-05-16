@@ -1,96 +1,110 @@
-*{
-	font-family: sans-serif;
-	font-weight: 100;
+* {
+  font-family: Arial, sans-serif; 
 }
 
-body{
-	background: #000;
+body {
+  background: #333; 
+  color: #fff; 
 }
+
 .flex-container {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-	background: #444;
-	margin: 50px 50px;
-	padding: 20px;
-	outline: 4px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222; 
+  margin: 50px auto; 
+  padding: 20px;
+  border: 4px solid #444; 
+  border-radius: 10px; 
+  max-width: 600px; 
 }
 
 .form {
-	min-width: 400px;
-	flex: 1;
-	text-align: center;
-	padding: 30px;
-	order: 5;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
 }
 
-.form__input{
-	width: 100%;
-	padding: 7px;
-	margin: 6px 0;
-	color: #fff;
-	border: none;
-	border-bottom: 3px solid rgb(72, 95, 220);
-	background: transparent;
+.form__input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff; 
+  border: none;
+  border-bottom: 2px solid #888; 
+  background: #444; 
+  border-radius: 5px; 
+  transition: border-bottom-color 0.3s; 
 }
 
 .form__input:focus {
-	background: linear-gradient(to bottom,transparent,#333);
-	outline: none;
-	border-bottom: 3px solid rgb(44, 215, 204);
-}
-.form textarea{
-	min-height: 140px;
-	resize: none;
-}
-.form-img{
-	flex: 1;
-	padding: 10px;
-	display: flex;
-	min-width: 300px;
-	max-width: 400px;
-	order: 2;
+  outline: none;
+  border-bottom-color: #ff00dc; 
 }
 
-.form-img div{
-	padding: 10px;
-}
-.img-container{
-	margin: auto;
-	padding: 20px;
-}
-
-.img-container div{
-	background-color: rgb(64, 107, 223);
-	border-radius: 50%;
-	text-align: center;
-}
-.form-img img{
-	width: 75%;
-	margin: auto;
+.form textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff; 
+  border: 2px solid #888; 
+  background: #444; 
+  border-radius: 5px; 
+  resize: none; 
+  transition: border-color 0.3s; 
 }
 
-.form input[type="submit"]{
-	background-color: rgb(58, 241, 229);
-	border-bottom: none;
-	padding: 12px;
+.form textarea:focus {
+  outline: none;
+  border-color: #ff00dc; 
 }
 
-.form input[type="submit"]:hover{
-	background-color: #0ca;
-	border-bottom: none;
-	padding: 12px;
+.form input[type="submit"] {
+  background-color: #ff00dc; 
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
-.form input[type="submit"]:focus{
-	background: #054;
+.form input[type="submit"]:hover {
+  background-color: #d400b7; 
 }
 
-.form input[type="submit"]:active{
-	background: linear-gradient(to bottom,#094,rgb(109, 209, 193));
-<<<<<<< HEAD
+.form input[type="submit"]:focus {
+  outline: none;
 }
-=======
+
+.form input[type="submit"]:active {
+  background-color: #d400b7; 
 }
->>>>>>> 4951693e7ad17022817edaa42cd24c8ebc9a2bb0
+
+.form-img {
+  flex: 1;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.form-img div {
+  background-color: #666; 
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden; 
+  width: 200px; 
+  height: 200px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.form-img img {
+  max-width: 100px; 
+  height: auto; 
+  border-radius: 50%; /* Hacemos que la imagen sea redonda */
+  object-fit: cover; 
+  }
