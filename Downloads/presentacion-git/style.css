@@ -1,0 +1,113 @@
+* {
+  font-family: Arial, sans-serif; /* Cambiamos la fuente a Arial para una mejor legibilidad */
+}
+
+body {
+  background: #333; /* Cambiamos el color de fondo a un tono oscuro */
+  color: #fff; /* Cambiamos el color del texto a blanco */
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222; /* Cambiamos el color de fondo a un tono oscuro */
+  margin: 50px auto; /* Centramos el contenedor */
+  padding: 20px;
+  border: 4px solid #444; /* Cambiamos el color del borde a un tono más claro */
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  max-width: 600px; /* Limitamos el ancho máximo */
+}
+
+.form {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff; /* Cambiamos el color del texto a blanco */
+  border: none;
+  border-bottom: 2px solid #888; /* Cambiamos el color del borde inferior a un tono más claro */
+  background: #444; /* Cambiamos el color de fondo a un tono oscuro */
+  border-radius: 5px; /* Agregamos bordes redondeados */
+  transition: border-bottom-color 0.3s; /* Agregamos una transición suave al color del borde inferior */
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom-color: #ff00dc; /* Cambiamos el color del borde inferior al enfocar a rosa */
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff; /* Cambiamos el color del texto a blanco */
+  border: 2px solid #888; /* Cambiamos el color del borde a un tono más claro */
+  background: #444; /* Cambiamos el color de fondo a un tono oscuro */
+  border-radius: 5px; /* Agregamos bordes redondeados */
+  resize: none; /* Evitamos que se pueda redimensionar el textarea */
+  transition: border-color 0.3s; /* Agregamos una transición suave al color del borde */
+}
+
+.form textarea:focus {
+  outline: none;
+  border-color: #ff00dc; /* Cambiamos el color del borde al enfocar a rosa */
+}
+
+.form input[type="submit"] {
+  background-color: #ff00dc; /* Cambiamos el color del botón a un tono rosa */
+  color: #fff; /* Cambiamos el color del texto a blanco */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px; /* Agregamos bordes redondeados */
+  cursor: pointer; /* Cambiamos el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Agregamos una transición suave al color de fondo */
+}
+
+.form input[type="submit"]:hover {
+  background-color: #d400b7; /* Cambiamos el color del botón al pasar el ratón a un tono más oscuro */
+}
+
+.form input[type="submit"]:focus {
+  outline: none;
+}
+
+.form input[type="submit"]:active {
+  background-color: #d400b7; /* Cambiamos el color del botón al hacer clic a un tono más oscuro */
+}
+
+.form-img {
+  flex: 1;
+  padding: 20px; /* Incrementamos el espacio alrededor del círculo */
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección del flex a columna */
+  align-items: center; /* Centramos horizontalmente */
+}
+
+.form-img div {
+  background-color: #666; /* Cambiamos el color del círculo a un tono más oscuro */
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden; /* Evitamos que la imagen sobresalga del círculo */
+  width: 200px; /* Aumentamos el tamaño del círculo */
+  height: 200px; /* Aumentamos el tamaño del círculo */
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centramos verticalmente */
+  align-items: center; /* Centramos horizontalmente */
+}
+
+.form-img img {
+  max-width: 100px; /* Ajustamos el tamaño máximo de la imagen */
+  height: auto; /* Ajustamos la imagen para que se ajuste al círculo */
+  border-radius: 50%; /* Hacemos que la imagen sea redonda */
+  object-fit: cover; /* Evitamos que la imagen se estire */
+  }
+
+
+
