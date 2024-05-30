@@ -57,7 +57,7 @@ body {
 
 .form textarea:focus {
   outline: none;
-  border-color: #ff00dc; /* Cambiamos el color del borde al enfocar a rosa */
+  border-color: #ff56e8; /* Cambiamos el color del borde al enfocar a rosa */
 }
 
 .form input[type="submit"] {
